@@ -1,0 +1,150 @@
+
+
+/*back中登录页面的css样式部分*/
+
+ .login_body {
+  background-color: rgba(0,0,0,.7);
+}
+
+.container .mt_200 {
+  padding-top:100px;
+}
+
+.container h4 {
+  text-align: center;
+}
+
+/*back中首页中的css样式部分*/
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+html,body{
+  background-color: #fff;
+  height: 100%;
+}
+
+
+.lt_aside {
+  width: 180px;
+  height: 100%;
+  background-color: #222D32;
+  position: absolute;
+  left: 0;
+  z-index:555;
+  transition: all 1s;
+}
+
+.lt_aside.now {
+  left: -180px;
+}
+
+.lt_aside .title {
+  width: 100%;
+  height: 50px;
+  background-color: #367FA9;
+}
+
+.lt_aside .title a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 50px;
+
+}
+
+.lt_aside .lt_user {
+  margin-top: 30px;
+
+}
+
+.lt_aside .lt_user img {
+
+  margin-left: 50px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.lt_aside .lt_user h4 {
+  text-align: center;
+  color: #fff;
+  font-family: 黑体;
+}
+
+.nav {
+  margin-top: 30px;
+  margin-left:-38px;
+}
+
+
+
+.lt_aside .nav a {
+  display: block;
+  height: 40px;
+  line-height: 34px;
+  color: #ccc;
+  padding-left: 40px;
+  border: 3px solid transparent;
+}
+
+.lt_aside .nav a.active {
+  background-color: #000;
+  border-left-color: blue;
+}
+
+.lt_aside .nav .second a {
+  padding-left: 60px;
+}
+
+
+/*内容部分*/
+.lt_content {
+  width: 100%;
+  height: 100%;
+  padding-left: 180px;
+  padding-top: 70px;
+  transition: all 1s;
+}
+
+.lt_content.now {
+  padding-left: 0;
+
+}
+
+.lt_content .lt_header {
+  width: 100%;
+  height: 50px;
+  background-color: #3C8DBC;
+  padding: 0 20px 0 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 1s;
+
+
+}
+
+.lt_content .lt_header.now {
+  padding-left: 20px;
+}
+
+
+.lt_content .lt_header a {
+  color: #fff;
+  line-height: 50px;
+  font-size: 16px;
+}
+
+.chart_left,
+.chart_right{
+  width: 45%;
+  height: 400px;
+}
