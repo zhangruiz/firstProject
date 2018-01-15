@@ -29,13 +29,30 @@ $(function(){
           bootstrapMajorVersion:3,
           crrentPage:page,
           totalPages: Math.ceil(info.total / info.size),
+
+          itemTexts: function (type, page, current) {
+            //根据type的不同，返回不同的字符串
+            switch (type) {
+              case "first":
+                return "首页";
+              case "prev":
+                return "上一页";
+              case "next":
+                return "下一页";
+              case "last":
+                return "尾页";
+              case "page":
+                return page;
+            }
+          },
+
           onPageClicked:function(a,b,c,p){
 
             page = p,
             render()
           }
         })
-      }
+      },
     })
   }
    render();
@@ -75,6 +92,9 @@ $(function(){
     }
   });
 
+
+  //校验成功 发送ajax请求， 隐藏蒙层  当前页为第一页 添加的数据渲染到页面上
+  //表单重置
   $form.on("success.form.bv",function(e){
     e.preventDefault();
 
